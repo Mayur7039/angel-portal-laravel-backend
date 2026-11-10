@@ -12,6 +12,6 @@
     ]
   },
   "deploy": {
-    "startCommand": "php artisan config:clear && php artisan migrate --force --database=mysql || true && /start-container.sh"
+    "startCommand": "php artisan config:clear && php artisan cache:clear && /start-container.sh"
   }
 }
